@@ -20,8 +20,8 @@ function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      {loading && !error && <b>Request in progress...</b>}
       <ContactList />
+      {loading && !error && <p className="loading">Request in progress...</p>}
     </>
   );
 }
